@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if [ -z "DB_PORT_3306_TCP_ADDR"]; then
-DB_HOST=echo $DB_PORT_3306_TCP_ADDR
-else
+if [ -z "DB_PORT_3306_TCP_ADDR" ]; then
 DB_HOST=${DB_HOST:-localhost}
+else
+DB_HOST=echo $DB_PORT_3306_TCP_ADDR
 fi
 DB_PORT=${DB_PORT:-3306}
 DB_NAME=${DB_NAME:-redmine_production}
