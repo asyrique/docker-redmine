@@ -38,6 +38,3 @@ RUN chmod 700 /root/.ssh && chmod 600 /root/.ssh/authorized_keys && chown root:r
 
 EXPOSE 22
 EXPOSE 80
-
-ENTRYPOINT ["/redmine/init"]
-CMD ["app:start"]
