@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -n "${DB_PORT_3306_TCP_ADDR+1}" ]; then
+if [ -n "${DB_PORT_3306_TCP_ADDR:+1}" ]; then
 DB_HOST=$DB_PORT_3306_TCP_ADDR
 else
 DB_HOST=${DB_HOST:-localhost}
